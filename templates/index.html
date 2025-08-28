@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spot the Fake - AI Detector</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔎 Spot the Fake</h1>
+    <p>AI-Powered Detection of Fraudulent Websites & Apps</p>
+
+    <form method="POST">
+      <label>URL:</label>
+      <input type="text" name="url" placeholder="Enter website URL" required><br><br>
+
+      <label>Title:</label>
+      <input type="text" name="title" placeholder="Enter website/app title" required><br><br>
+
+      <label>HTML/Text:</label>
+      <textarea name="html" placeholder="Paste some page text or HTML"></textarea><br><br>
+
+      <button type="submit">Check</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+      <h2>Result: {{ prediction }}</h2>
+      <p>Reason: {{ reason }}</p>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
