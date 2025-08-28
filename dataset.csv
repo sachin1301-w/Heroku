@@ -1,0 +1,11 @@
+url,title,html,label
+http://paypal.com/login,PayPal - Log In,<form action='/login'>Enter your PayPal login</form>,0
+http://secure-paypal.com/login,PayPal Security Check,<form action='/secure'>Enter your credentials urgently</form>,1
+http://amazon.com,Amazon - Online Shopping,<h1>Welcome to Amazon</h1>,0
+http://amaz0n-offer.com,Amazon Prime FREE Gift,<h2>Congratulations! Claim your free gift now!</h2>,1
+http://google.com,Google,<input type='text' name='q'>,0
+http://goog1e-login.com,Google Sign In,<form>Enter email and password</form>,1
+http://microsoft.com,Microsoft Official Site,<h1>Microsoft Products</h1>,0
+http://micros0ft-support.com,Microsoft Support Alert,<h2>Your PC is infected. Call now!</h2>,1
+http://netflix.com,Netflix,<h1>Unlimited Movies</h1>,0
+http://netflix-account-verify.com,Netflix Account Verification,<form>Enter card details</form>,1
